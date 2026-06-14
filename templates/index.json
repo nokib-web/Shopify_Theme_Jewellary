@@ -1,0 +1,640 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Timeless Craftsmanship Since 1987",
+            "title": "Forever Begins With a Yes",
+            "title_size": 40,
+            "subheading": "Handcrafted diamond engagement rings, designed and made in Australia – where timeless elegance meets true love.",
+            "link": "shopify://collections/engagement-wedding-rings-alexander-jewellers",
+            "link_text": "Shop Engagement Rings",
+            "link_2": "shopify://collections/engagement-rings-1",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Engagement_rings_-_Alexander_Jewellers.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_w6VQkM": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Effortless brilliance. Endlessly worn. Eternally loved.",
+            "title": "Design Your Own",
+            "title_size": 40,
+            "subheading": "",
+            "link": "https://alexanderjewellersnorthrocks.jewelershowcase.com/",
+            "link_text": "start creating",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/82370108-1920x1280-a2b8774b-178d-4f3b-99b1-f4f07339cedf.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_rwPVCD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "Two Souls. One Spark. Forever Bonded.",
+            "title": "Bonded in Brilliance",
+            "title_size": 40,
+            "subheading": "Celebrate lasting love with wedding bands handcrafted in Australia - ethically made, beautifully refined, and designed to stand the test of time.",
+            "link": "shopify://collections/rings-bands",
+            "link_text": "View Wedding Bands",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Wedding_Bands.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_X3RHhr": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/B2_2025.02.21_PALLOYS0059_1_2.jpg",
+            "image_mobile": "shopify://shop_images/B2_2025.02.21_PALLOYS0059_1_2.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "image_w6VQkM",
+        "image_rwPVCD",
+        "image_X3RHhr"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "custom_hero_slider": {
+      "type": "custom-hero-slider",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "bg_zoom": true,
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
+            "heading_prefix": "NEW COLLECTION",
+            "prefix_color": "#00d1a0",
+            "heading": "Discover The Future",
+            "heading_size": 48,
+            "heading_color": "#ffffff",
+            "text": "<p>Our latest products are here. Experience the best quality.</p>",
+            "text_size": 18,
+            "text_color": "#ffffff",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_bg": "#00d1a0",
+            "button_color": "#ffffff",
+            "content_animation": "fade-up",
+            "vertical_position": "center",
+            "horizontal_position": "flex-start",
+            "text_alignment": "left",
+            "mobile_text_alignment": "center",
+            "content_bg_color": "#000000",
+            "content_bg_opacity": 0,
+            "content_radius": 0,
+            "content_max_width": 600,
+            "padding_x": 50,
+            "padding_y": 60
+          }
+        },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "bg_zoom": true,
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
+            "heading_prefix": "LIMITED EDITION",
+            "prefix_color": "#00d1a0",
+            "heading": "Next Generation Tech",
+            "heading_size": 48,
+            "heading_color": "#ffffff",
+            "text": "<p>Our latest products are here. Experience the best quality.</p>",
+            "text_size": 18,
+            "text_color": "#ffffff",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_bg": "#00d1a0",
+            "button_color": "#ffffff",
+            "content_animation": "fade-up",
+            "vertical_position": "center",
+            "horizontal_position": "center",
+            "text_alignment": "center",
+            "mobile_text_alignment": "center",
+            "content_bg_color": "#000000",
+            "content_bg_opacity": 0,
+            "content_radius": 0,
+            "content_max_width": 600,
+            "padding_x": 50,
+            "padding_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "slide_1",
+        "slide_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 6,
+        "drag": true,
+        "transition_style": "fade",
+        "thumbnail_border_color": "#00d1a0",
+        "container_width": "full",
+        "desktop_height_vh": 75,
+        "mobile_media_height": 280,
+        "mobile_content_bg": "#000000"
+      }
+    },
+    "prismara_hero_slider": {
+      "type": "prismara-hero-slider",
+      "blocks": {
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/1necklace1.jpg",
+            "category": "Necklaces",
+            "subtitle": "Grace Redefined",
+            "bg_color": "#c2b2a2",
+            "product_image": "shopify://shop_images/necklaces-1.jpg",
+            "description": "Elevate every look with our exquisite necklaces. From pendants to chokers, these designs add sophistication to any style.",
+            "button_label": "Shop Necklaces",
+            "button_link": "shopify://collections/cudworth-necklace"
+          }
+        },
+        "slide_XQHmNt": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/12ring.jpg",
+            "category": "Rings",
+            "subtitle": "A Circle of Perfection",
+            "bg_color": "#c2b2a2",
+            "product_image": "shopify://shop_images/rings_69299524-a6e3-4472-be80-b203e767270f.jpg",
+            "description": "Celebrate every milestone with a ring that tells your story.",
+            "button_label": "Shop Rings",
+            "button_link": "shopify://collections/jewellery-rings-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_2",
+        "slide_XQHmNt"
+      ],
+      "settings": {
+        "show_socials": false,
+        "overlay_opacity": 20,
+        "text_alignment": "center",
+        "heading_color": "#ffffff",
+        "subtitle_color": "#c5a880",
+        "description_color": "#ffffff",
+        "social_color": "#ffffff",
+        "btn_border_color": "#c5a880",
+        "btn_text_color": "#ffffff",
+        "btn_hover_bg": "#c5a880",
+        "btn_hover_text": "#000000",
+        "heading_size": 5,
+        "subtitle_size": 1.5,
+        "desc_size": 1.1,
+        "heading_size_mobile": 3.5,
+        "subtitle_size_mobile": 1.2,
+        "desc_size_mobile": 1,
+        "arch_width": 320,
+        "arch_height": 480,
+        "arch_outline_offset": 15,
+        "arch_outline_color": "#ffffff",
+        "arch_width_mobile": 160,
+        "arch_height_mobile": 240,
+        "arch_outline_offset_mobile": 10
+      }
+    },
+    "featured_categories_circles": {
+      "type": "featured-categories",
+      "blocks": {
+        "block_1": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+            "title": "NEW IN",
+            "link": ""
+          }
+        },
+        "block_2": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/R8873612042_8.jpg",
+            "title": "WATCH",
+            "link": "shopify://collections/watches"
+          }
+        },
+        "block_3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/109A4569_1440x1800_815262c2-7873-415a-a9a4-61d462c44456.webp",
+            "title": "ACCESSORIES",
+            "link": "shopify://collections/luxury-pens-designer-key-rings-alexander-jewellers"
+          }
+        },
+        "block_4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/IGR-23262-0.10-Y-N.jpg",
+            "title": "RINGS",
+            "link": "shopify://collections/jewellery-rings-1"
+          }
+        },
+        "block_5": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/Two-sided_yellow_necklace_with_bezel-set_diamonds._Available_in_9ct_and_18ct_gold_from_Alexander_Jewellers.jpg",
+            "title": "NECKLACES",
+            "link": "shopify://collections/necklaces-pendants"
+          }
+        },
+        "block_6": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/image0_copy.jpg",
+            "title": "GIFT IDEAS",
+            "link": "shopify://collections/giftware"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6"
+      ],
+      "settings": {
+        "title": "OUR CATEGORIES",
+        "text": "Explore our collection of sophisticated, modern designs that make a statement without saying a word. Find your signature look today.",
+        "align_text": "center",
+        "grid_alignment": "center",
+        "circle_size": 170,
+        "item_gap": 30,
+        "image_shadow": false,
+        "image_border": false,
+        "hover_zoom": true,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "heading_size": 36,
+        "heading_weight": "400",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "divider": false
+      }
+    },
+    "text_and_image_MC78jN": {
+      "type": "text-and-image",
+      "blocks": {
+        "block_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2379_JPG_94c395fe-3532-4501-a479-e8ce25622b28.jpg"
+          }
+        },
+        "block_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_2379_JPG_94c395fe-3532-4501-a479-e8ce25622b28.jpg",
+        "image2": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+        "image_width": 550,
+        "images_per_view": 1,
+        "slider_autoplay": true,
+        "slider_speed": 3,
+        "subtitle": "Your Legacy Begins Here",
+        "title": "Uncover Rare Brilliance",
+        "text": "<p>Discover rare coloured diamonds – uniquely Australian, ethically sourced, and masterfully cut. Treasured for their warm, golden tones and timeless beauty, these stones are made for those who seek more than jewellery - they seek a legacy. </p>",
+        "button_label": "Explore THE Collection",
+        "button_link": "shopify://collections/australian-chocolate-diamond-1",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "story_banner_new": {
+      "type": "story-banner",
+      "settings": {
+        "bg_color": "#000000",
+        "bg_image": "shopify://shop_images/banner-7.webp",
+        "text_align": "center",
+        "text_size": 24,
+        "text": "<p>We believe jewelry is more than an accessory—it’s a story of individuality and style. Our curated collection blends timeless craftsmanship with modern design, <strong>creating pieces that empower you to express your unique elegance every day.</strong></p>",
+        "button_label": "OUR STORY",
+        "button_link": "shopify://pages/about-alexander-jewellers",
+        "content_width": 800,
+        "overlay_opacity": 30,
+        "primary_text_color": "#d4af37",
+        "secondary_text_color": "#ffffff",
+        "button_color": "#ffffff",
+        "divider": false
+      }
+    },
+    "featured_collection_RbCckh": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "cudworth",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "luxury_repairs_new": {
+      "type": "luxury-repairs",
+      "blocks": {
+        "badge_1": {
+          "type": "badge",
+          "settings": {
+            "icon": "star",
+            "text": "35+ Years Experience"
+          }
+        },
+        "badge_2": {
+          "type": "badge",
+          "settings": {
+            "icon": "shield",
+            "text": "Family Owned"
+          }
+        },
+        "badge_3": {
+          "type": "badge",
+          "settings": {
+            "icon": "map-pin",
+            "text": "Sydney Based"
+          }
+        }
+      },
+      "block_order": [
+        "badge_1",
+        "badge_2",
+        "badge_3"
+      ],
+      "settings": {
+        "bg_color": "#f8f5f1",
+        "gold_accent": "#c8a26a",
+        "heading_color": "#222222",
+        "text_color": "#444444",
+        "eyebrow": "Trusted Since 1987",
+        "heading": "Jewellery Repairs & Restoration",
+        "heading_size": 3.2,
+        "body": "<p>Trust our master jewellers with your most precious pieces. We specialize in ring resizing, intricate repairs, heirloom restoration, custom engraving, and professional valuations.</p>",
+        "primary_btn_label": "Explore Services",
+        "primary_btn_link": "shopify://pages/jewellery-services-sydney",
+        "btn_radius": 50,
+        "btn_bg_color": "#000000",
+        "btn_text_color": "#ffffff",
+        "btn_border_color": "#000000",
+        "btn_hover_bg": "#c8a26a",
+        "btn_hover_text": "#ffffff",
+        "btn_hover_border": "#c8a26a",
+        "hero_image": "shopify://shop_images/jewellery-repairs.jpg",
+        "float_image_1": "shopify://shop_images/Workshop-Re-Love-3.webp",
+        "float_image_2": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60
+      }
+    },
+    "featured_collection_mxhfE9": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Shop Engagement Rings",
+        "home_featured_products": "engagement-wedding-rings-alexander-jewellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "layered_images_showcase": {
+      "type": "layered-images-showcase",
+      "settings": {
+        "image_1": "shopify://shop_images/MarkMcaskillJewellery_image_mmj_view_2749-9yd-2.jpg",
+        "image_2": "shopify://shop_images/MarkMcaskillJewellery_image_mmj_view_2749-9yd-2.jpg",
+        "image_3": "shopify://shop_images/2852-2.jpg",
+        "image_radius": 16,
+        "image_shadow": true,
+        "initial_opacity": 0.4,
+        "initial_blur": 2,
+        "initial_grayscale": 40,
+        "hover_scale": 120,
+        "transition_speed": 2,
+        "layout": "left",
+        "align_text": "left",
+        "eyebrow": "Create Your Dream Jewellery",
+        "title": "Creates lasting memories of each occasion",
+        "text": "<p>Whether you're creating an engagement ring, remodelling a family heirloom, or designing a bespoke piece, our jewellers will guide you through every step.</p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/all",
+        "button_style": "solid",
+        "btn_radius": 4,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "heading_size": 36,
+        "heading_weight": "500",
+        "desc_size": 16,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "divider": false
+      }
+    },
+    "text_and_image_6znAg6": {
+      "type": "text-and-image",
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/IMG_4634.jpg",
+        "image2": "shopify://shop_images/starlight_eternity_5fd9e8e5-d2a7-44c6-81bb-0e55a4dff7dc.webp",
+        "image_width": 700,
+        "images_per_view": 2,
+        "slider_autoplay": true,
+        "slider_speed": 3,
+        "subtitle": "",
+        "title": "Create Your Dream Jewellery",
+        "text": "<p>Whether you're creating an engagement ring, remodelling a family heirloom, or designing a bespoke piece, our jewellers will guide you through every step.<br/><br/>Walk-ins welcome.</p>",
+        "button_label": "Visit Our Showroom",
+        "button_link": "shopify://pages/contact-us",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "164577628288f9dc1b": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "jewellery news & insights",
+        "blog": "jewellery-education-centre",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    },
+    "1751424715d2d649f9": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_7ez8GY": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Review From Instagram",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_7ez8GY"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "map": {
+      "type": "map",
+      "settings": {
+        "map_title": "visit our store",
+        "address": "<p>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 2151</p><p>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
+        "map_address": "Shop 28 & 29 North Rocks Shopping Centre328-336 North Rocks RoadNorth Rocks NSW 2151",
+        "api_key": "AIzaSyCLQYdgzPG5Sly6MszcXtUhT-yoK9NZvTc",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "newsletter_ezbTtz": {
+      "type": "newsletter",
+      "blocks": {
+        "title_wrPA8k": {
+          "type": "title",
+          "settings": {
+            "title": "Become a vip"
+          }
+        },
+        "text_pDdXcn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join us to receive specials offers and gift ideas!</p>"
+          }
+        },
+        "form_r6p4zC": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_wrPA8k",
+        "text_pDdXcn",
+        "form_r6p4zC"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_background": "#ffffff",
+        "color_text": "#000000"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "custom_hero_slider",
+    "prismara_hero_slider",
+    "featured_categories_circles",
+    "text_and_image_MC78jN",
+    "story_banner_new",
+    "featured_collection_RbCckh",
+    "luxury_repairs_new",
+    "featured_collection_mxhfE9",
+    "layered_images_showcase",
+    "text_and_image_6znAg6",
+    "164577628288f9dc1b",
+    "blog-posts",
+    "1751424715d2d649f9",
+    "map",
+    "newsletter_ezbTtz"
+  ]
+}
