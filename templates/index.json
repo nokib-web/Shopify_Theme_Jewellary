@@ -618,6 +618,30 @@
         "color_background": "#ffffff",
         "color_text": "#000000"
       }
+    },
+    "craftsmanship_heritage_new": {
+      "type": "craftsmanship-heritage",
+      "settings": {}
+    },
+    "custom_design_journey_new": {
+      "type": "custom-design-journey",
+      "settings": {}
+    },
+    "conscious_luxury_new": {
+      "type": "conscious-luxury",
+      "settings": {}
+    },
+    "section_divider_new": {
+      "type": "section-divider",
+      "settings": {
+        "color": "#000000",
+        "shape": "animated-waves",
+        "height": 80,
+        "margin_top": -75,
+        "margin_bottom": 0,
+        "flip_horizontal": false,
+        "flip_vertical": false
+      }
     }
   },
   "order": [
@@ -625,17 +649,21 @@
     "custom_hero_slider",
     "prismara_hero_slider",
     "featured_categories_circles",
+    "craftsmanship_heritage_new",
     "text_and_image_MC78jN",
     "story_banner_new",
     "featured_collection_RbCckh",
+    "custom_design_journey_new",
     "luxury_repairs_new",
     "featured_collection_mxhfE9",
     "layered_images_showcase",
     "text_and_image_6znAg6",
     "164577628288f9dc1b",
+    "conscious_luxury_new",
     "blog-posts",
     "1751424715d2d649f9",
     "map",
-    "newsletter_ezbTtz"
+    "newsletter_ezbTtz",
+    "section_divider_new"
   ]
 }
