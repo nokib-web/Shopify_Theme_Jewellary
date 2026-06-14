@@ -1,13 +1,9 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 {%- style -%}
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
-
   .featured-categories-{{ section.id }} {
     --bg-color: {{ section.settings.bg_color }};
     --text-color: {{ section.settings.text_color }};
-    --heading-size: {{ section.settings.heading_size }}px;
-    --heading-weight: {{ section.settings.heading_weight }};
     --circle-size: {{ section.settings.circle_size }}px;
     --item-gap: {{ section.settings.item_gap }}px;
     --padding-top: {{ section.settings.padding_top }}px;
@@ -18,7 +14,6 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: var(--padding-top) 40px var(--padding-bottom) 40px;
-    font-family: 'Montserrat', sans-serif;
   }
 
   .featured-categories__container {
@@ -39,18 +34,10 @@
   }
 
   .featured-categories__heading {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: var(--heading-size);
-    font-weight: var(--heading-weight);
-    text-transform: uppercase;
-    letter-spacing: 2px;
     margin: 0 0 15px 0;
-    line-height: 1.2;
   }
 
   .featured-categories__desc {
-    font-size: 0.95rem;
-    line-height: 1.6;
     opacity: 0.75;
     margin: 0;
   }
@@ -133,30 +120,28 @@
     }
   {% endif %}
 
-  /* Mobile Swipe Slider / Horizontal Scroll */
+  /* Mobile Grid Layout */
   @media only screen and (max-width: 768px) {
     .featured-categories-{{ section.id }} {
       padding: var(--padding-top) 20px var(--padding-bottom) 20px;
     }
 
     .featured-categories__grid {
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      margin: 0 -20px;
-      padding: 0 20px 15px 20px;
-      scrollbar-width: none; /* Hide scrollbar for Firefox */
-    }
-
-    .featured-categories__grid::-webkit-scrollbar {
-      display: none; /* Hide scrollbar for Chrome/Safari */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
     }
 
     .featured-categories__item {
-      flex: 0 0 auto;
-      scroll-snap-align: start;
+      width: 100%;
+      max-width: 180px;
+    }
+
+    .featured-categories__img-wrapper {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
     }
   }
 {%- endstyle -%}
@@ -168,10 +153,10 @@
     {%- if section.settings.title != blank or section.settings.text != blank -%}
       <div class="featured-categories__header">
         {%- if section.settings.title != blank -%}
-          <h2 class="featured-categories__heading">{{ section.settings.title }}</h2>
+          <h2 class="h1 featured-categories__heading">{{ section.settings.title }}</h2>
         {%- endif -%}
         {%- if section.settings.text != blank -%}
-          <p class="featured-categories__desc">{{ section.settings.text }}</p>
+          <div class="rte featured-categories__desc"><p>{{ section.settings.text }}</p></div>
         {%- endif -%}
       </div>
     {%- endif -%}
@@ -316,28 +301,6 @@
       "id": "text_color",
       "label": "Text Color",
       "default": "#111111"
-    },
-    {
-      "type": "range",
-      "id": "heading_size",
-      "label": "Heading Font Size",
-      "default": 36,
-      "min": 24,
-      "max": 72,
-      "step": 2,
-      "unit": "px"
-    },
-    {
-      "type": "select",
-      "id": "heading_weight",
-      "label": "Heading Font Weight",
-      "default": "400",
-      "options": [
-        { "value": "300", "label": "Light" },
-        { "value": "400", "label": "Normal" },
-        { "value": "500", "label": "Medium" },
-        { "value": "600", "label": "Bold" }
-      ]
     },
     {
       "type": "range",

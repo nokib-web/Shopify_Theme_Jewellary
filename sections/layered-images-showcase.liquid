@@ -1,14 +1,9 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 {%- style -%}
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
   .layered-showcase-{{ section.id }} {
     --bg-color: {{ section.settings.bg_color }};
     --text-color: {{ section.settings.text_color }};
-    --heading-size: {{ section.settings.heading_size }}px;
-    --heading-weight: {{ section.settings.heading_weight }};
-    --desc-size: {{ section.settings.desc_size }}px;
     --padding-top: {{ section.settings.padding_top }}px;
     --padding-bottom: {{ section.settings.padding_bottom }}px;
     --img-radius: {{ section.settings.image_radius }}px;
@@ -132,27 +127,16 @@
   }
 
   .layered-showcase__eyebrow {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
     color: #888888;
     margin-bottom: 15px;
     display: block;
   }
 
   .layered-showcase__heading {
-    font-size: var(--heading-size);
-    font-weight: var(--heading-weight);
-    line-height: 1.15;
     margin: 0 0 25px 0;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
   }
 
   .layered-showcase__desc {
-    font-size: var(--desc-size);
-    line-height: 1.6;
     margin-bottom: 35px;
     opacity: 0.85;
   }
@@ -279,11 +263,11 @@
     <!-- Right Column: Text & Content -->
     <div class="layered-showcase__content">
       {%- if section.settings.eyebrow != blank -%}
-        <span class="layered-showcase__eyebrow">{{ section.settings.eyebrow }}</span>
+        <div class="subheading layered-showcase__eyebrow">{{ section.settings.eyebrow }}</div>
       {%- endif -%}
 
       {%- if section.settings.title != blank -%}
-        <h2 class="layered-showcase__heading">{{ section.settings.title }}</h2>
+        <h2 class="h1 layered-showcase__heading">{{ section.settings.title }}</h2>
       {%- endif -%}
 
       {%- if section.settings.text != blank -%}
@@ -521,39 +505,6 @@
       "id": "text_color",
       "label": "Text Color",
       "default": "#111111"
-    },
-    {
-      "type": "range",
-      "id": "heading_size",
-      "label": "Heading Font Size",
-      "default": 36,
-      "min": 20,
-      "max": 72,
-      "step": 2,
-      "unit": "px"
-    },
-    {
-      "type": "select",
-      "id": "heading_weight",
-      "label": "Heading Font Weight",
-      "default": "500",
-      "options": [
-        { "value": "300", "label": "Light" },
-        { "value": "400", "label": "Normal" },
-        { "value": "500", "label": "Medium" },
-        { "value": "600", "label": "Bold" },
-        { "value": "700", "label": "Extra Bold" }
-      ]
-    },
-    {
-      "type": "range",
-      "id": "desc_size",
-      "label": "Description Font Size",
-      "default": 16,
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "unit": "px"
     },
     {
       "type": "range",

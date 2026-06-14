@@ -24,21 +24,13 @@
 
 .lr-eyebrow {
   color: {{ section.settings.gold_accent }};
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  font-weight: 600;
   margin-bottom: 20px;
   display: block;
 }
 
 .lr-heading {
-  font-family: var(--font-heading-family), serif;
-  font-size: {{ section.settings.heading_size }}rem;
   color: {{ section.settings.heading_color }};
-  line-height: 1.15;
   margin-bottom: 25px;
-  font-weight: 400;
 }
 
 .lr-body {
@@ -232,13 +224,13 @@
     text-align: center;
   }
   .lr-badges {
-    align-items: center;
+    align-items: flex-start;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
   .lr-buttons {
     justify-content: center;
-  }
-  .lr-heading {
-    font-size: {{ section.settings.heading_size | times: 0.8 }}rem;
   }
   
   .lr-visual {
@@ -265,15 +257,15 @@
     
     <div class="lr-content lr-animate-up">
       {% if section.settings.eyebrow != blank %}
-        <span class="lr-eyebrow">{{ section.settings.eyebrow }}</span>
+        <div class="subheading lr-eyebrow">{{ section.settings.eyebrow }}</div>
       {% endif %}
       
       {% if section.settings.heading != blank %}
-        <h2 class="lr-heading">{{ section.settings.heading }}</h2>
+        <h2 class="h1 lr-heading">{{ section.settings.heading }}</h2>
       {% endif %}
       
       {% if section.settings.body != blank %}
-        <div class="lr-body">{{ section.settings.body }}</div>
+        <div class="rte lr-body">{{ section.settings.body }}</div>
       {% endif %}
       
       {% if section.blocks.size > 0 %}
@@ -393,12 +385,6 @@
       "id": "heading",
       "label": "Heading",
       "default": "Jewellery Repairs & Restoration"
-    },
-    {
-      "type": "range",
-      "id": "heading_size",
-      "label": "Heading Size (rem)",
-      "min": 2, "max": 6, "step": 0.1, "default": 3.2
     },
     {
       "type": "richtext",
