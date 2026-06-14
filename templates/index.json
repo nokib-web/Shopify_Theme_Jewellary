@@ -325,6 +325,19 @@
         "divider": false
       }
     },
+    "craftsmanship_heritage_new": {
+      "type": "craftsmanship-heritage",
+      "settings": {
+        "layout": "left",
+        "align_text": "left",
+        "image": "shopify://shop_images/43bespoke.jpg",
+        "subtitle": "EST. 1987",
+        "title": "Master Craftsmanship",
+        "text": "<p>Decades of experience go into every piece we create. Our master jewelers blend traditional techniques with modern precision to craft rings that will last a lifetime and beyond.</p>",
+        "button_label": "Our Story",
+        "button_link": "shopify://pages/about-alexander-jewellers"
+      }
+    },
     "text_and_image_MC78jN": {
       "type": "text-and-image",
       "blocks": {
@@ -396,6 +409,16 @@
         "mobile_scrollable": true,
         "view_all": true,
         "divider": false
+      }
+    },
+    "custom_design_journey_new": {
+      "type": "custom-design-journey",
+      "settings": {
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "accent_color": "#d4af37",
+        "title": "The Bespoke Journey",
+        "subtitle": "From a spark of imagination to a masterpiece you can wear. Discover how we turn your dream ring into reality."
       }
     },
     "luxury_repairs_new": {
@@ -530,6 +553,17 @@
         "divider": false
       }
     },
+    "conscious_luxury_new": {
+      "type": "conscious-luxury",
+      "settings": {
+        "accent_color": "#d4af37",
+        "subtitle": "Ethical Sourcing",
+        "title": "Conscious Luxury",
+        "text": "<p>We believe that true luxury shouldn't come at a cost to the earth. Every diamond we source is rigorously vetted to be 100% conflict-free, and we exclusively use recycled precious metals to minimize our environmental footprint.</p>",
+        "button_label": "Book a VIP Consultation",
+        "button_link": ""
+      }
+    },
     "blog-posts": {
       "type": "blog-posts",
       "disabled": true,
@@ -619,28 +653,21 @@
         "color_text": "#000000"
       }
     },
-    "craftsmanship_heritage_new": {
-      "type": "craftsmanship-heritage",
-      "settings": {}
-    },
-    "custom_design_journey_new": {
-      "type": "custom-design-journey",
-      "settings": {}
-    },
-    "conscious_luxury_new": {
-      "type": "conscious-luxury",
-      "settings": {}
-    },
     "section_divider_new": {
       "type": "section-divider",
       "settings": {
-        "color": "#000000",
         "shape": "animated-waves",
+        "color": "#000000",
         "height": 80,
         "margin_top": -75,
         "margin_bottom": 0,
+        "height_mobile": 40,
+        "margin_top_mobile": -35,
+        "margin_bottom_mobile": 0,
         "flip_horizontal": false,
-        "flip_vertical": false
+        "flip_vertical": false,
+        "animation_direction": "left",
+        "animation_speed": 15
       }
     }
   },
