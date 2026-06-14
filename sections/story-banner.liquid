@@ -62,19 +62,39 @@
   }
 
   .story-banner__button {
-    color: {{ section.settings.button_color }};
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
     font-size: 0.85rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  .story-banner__button--underline {
+    color: {{ section.settings.button_color }};
     border-bottom: 1px solid {{ section.settings.button_color }};
     padding-bottom: 5px;
-    display: inline-block;
-    transition: opacity 0.3s ease;
   }
   
-  .story-banner__button:hover {
-    opacity: 0.7;
+  .story-banner-{{ section.id }} .story-banner__button--underline:hover {
+    color: {{ section.settings.button_hover_color }} !important;
+    border-bottom-color: {{ section.settings.button_hover_color }} !important;
+    opacity: 0.8;
+  }
+
+  .story-banner__button--solid {
+    color: {{ section.settings.button_color }};
+    background-color: {{ section.settings.button_bg_color }};
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 1px solid {{ section.settings.button_bg_color }};
+    font-weight: 600;
+  }
+
+  .story-banner-{{ section.id }} .story-banner__button--solid:hover {
+    color: {{ section.settings.button_hover_color }} !important;
+    background-color: {{ section.settings.button_hover_bg_color }} !important;
+    border-color: {{ section.settings.button_hover_bg_color }} !important;
   }
 
   .story-banner__floating-img {
@@ -146,8 +166,8 @@
     {%- endif -%}
 
     {%- if section.settings.button_label != blank -%}
-      <a href="{{ section.settings.button_link | default: '#' }}" class="story-banner__button">
-        {{ section.settings.button_label | remove: '->' | remove: '->' | strip }} &rarr;
+      <a href="{{ section.settings.button_link | default: '#' }}" class="story-banner__button story-banner__button--{{ section.settings.button_style }}">
+        {{ section.settings.button_label | remove: '->' | remove: '->' | strip }}{%- if section.settings.button_style == 'underline' -%} &rarr;{%- endif -%}
       </a>
     {%- endif -%}
   </div>
@@ -267,9 +287,41 @@
       "default": "#ffffff"
     },
     {
+      "type": "header",
+      "content": "Button Styling"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "default": "underline",
+      "options": [
+        { "value": "underline", "label": "Underline Link" },
+        { "value": "solid", "label": "Solid Button" }
+      ]
+    },
+    {
       "type": "color",
       "id": "button_color",
-      "label": "Button Color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color (Solid only)",
+      "default": "#C8A26A"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button Hover Text Color",
+      "default": "#C8A26A"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Button Hover Background (Solid only)",
       "default": "#ffffff"
     },
     {
