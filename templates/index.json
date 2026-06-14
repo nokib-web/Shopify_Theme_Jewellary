@@ -496,9 +496,9 @@
     "layered_images_showcase": {
       "type": "layered-images-showcase",
       "settings": {
-        "image_1": "shopify://shop_images/MarkMcaskillJewellery_image_mmj_view_2749-9yd-2.jpg",
-        "image_2": "shopify://shop_images/MarkMcaskillJewellery_image_mmj_view_2749-9yd-2.jpg",
-        "image_3": "shopify://shop_images/2852-2.jpg",
+        "image_1": "shopify://shop_images/2earrings.jpg",
+        "image_2": "shopify://shop_images/necklaces-1_aeab8cf3-88d4-455a-b929-6653d26e64ff.jpg",
+        "image_3": "shopify://shop_images/bespoke.jpg",
         "image_radius": 16,
         "image_shadow": true,
         "initial_opacity": 0.4,
