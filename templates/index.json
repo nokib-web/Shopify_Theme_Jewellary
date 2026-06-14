@@ -320,8 +320,6 @@
         "hover_zoom": true,
         "bg_color": "#ffffff",
         "text_color": "#111111",
-        "heading_size": 36,
-        "heading_weight": "400",
         "padding_top": 60,
         "padding_bottom": 60,
         "divider": false
@@ -379,7 +377,11 @@
         "overlay_opacity": 30,
         "primary_text_color": "#d4af37",
         "secondary_text_color": "#ffffff",
+        "button_style": "underline",
         "button_color": "#ffffff",
+        "button_bg_color": "#c8a26a",
+        "button_hover_color": "#c8a26a",
+        "button_hover_bg_color": "#ffffff",
         "divider": false
       }
     },
@@ -402,21 +404,24 @@
         "badge_1": {
           "type": "badge",
           "settings": {
-            "icon": "star",
+            "icon": "custom",
+            "custom_icon": "shopify://shop_images/quality.png",
             "text": "35+ Years Experience"
           }
         },
         "badge_2": {
           "type": "badge",
           "settings": {
-            "icon": "shield",
+            "icon": "custom",
+            "custom_icon": "shopify://shop_images/homeownership.png",
             "text": "Family Owned"
           }
         },
         "badge_3": {
           "type": "badge",
           "settings": {
-            "icon": "map-pin",
+            "icon": "custom",
+            "custom_icon": "shopify://shop_images/location_1.png",
             "text": "Sydney Based"
           }
         }
@@ -433,7 +438,6 @@
         "text_color": "#444444",
         "eyebrow": "Trusted Since 1987",
         "heading": "Jewellery Repairs & Restoration",
-        "heading_size": 3.2,
         "body": "<p>Trust our master jewellers with your most precious pieces. We specialize in ring resizing, intricate repairs, heirloom restoration, custom engraving, and professional valuations.</p>",
         "primary_btn_label": "Explore Services",
         "primary_btn_link": "shopify://pages/jewellery-services-sydney",
@@ -490,9 +494,6 @@
         "btn_radius": 4,
         "bg_color": "#000000",
         "text_color": "#ffffff",
-        "heading_size": 36,
-        "heading_weight": "500",
-        "desc_size": 16,
         "padding_top": 80,
         "padding_bottom": 80,
         "divider": false
