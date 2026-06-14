@@ -11391,7 +11391,26 @@ html[dir=rtl] .product-single__meta .rte{
 
 .section-header {
     margin-bottom: 25px;
+}
 
-  
+/* Seamlessly extend the footer color to the bottom of the screen */
+html, 
+html body,
+html body.template-index {
+    background-color: var(--colorFooter) !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+#PageContainer {
+    background-color: var(--colorBody);
+}
 
-  
+/* Aggressively hide Shopify Inbox & Chat dummy spacers */
+#dummy-chat-button-iframe,
+.shopify-chat__spacer,
+iframe[id^="dummy-chat"] {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
