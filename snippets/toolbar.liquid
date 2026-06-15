@@ -3,11 +3,11 @@
   assign currency_selector = false
   assign locale_selector = false
 
-  if section.settings.show_currency_selector and shop.enabled_currencies.size > 1
+  if block.settings.show_currency_selector and shop.enabled_currencies.size > 1
     assign currency_selector = true
   endif
 
-  if section.settings.show_locale_selector and shop.enabled_locales.size > 1
+  if block.settings.show_locale_selector and shop.enabled_locales.size > 1
     assign locale_selector = true
   endif
 
@@ -19,7 +19,8 @@
 <div class="toolbar{% if overlay_header%} toolbar--transparent{% endif %} small--hide">
   <div class="page-width">
     <div class="toolbar__content">
-      {%- if section.settings.toolbar_menu != blank -%}
+      {%- if block.settings.toolbar_menu != blank -%}
+        {%- assign toolbar_menu = linklists[block.settings.toolbar_menu] -%}
         <div class="toolbar__item toolbar__item--menu">
           <ul class="inline-list toolbar__menu">
           {%- for link in toolbar_menu.links -%}
@@ -31,7 +32,7 @@
         </div>
       {%- endif -%}
 
-      {%- if section.settings.toolbar_social -%}
+      {%- if block.settings.toolbar_social -%}
         <div class="toolbar__item">
           <ul class="inline-list toolbar__social">
             {%- if settings.social_instagram_link != blank -%}
@@ -123,7 +124,7 @@
           {%- render 'multi-selectors',
             locale_selector: locale_selector,
             currency_selector: currency_selector,
-            show_currency_flags: section.settings.show_currency_flags
+            show_currency_flags: block.settings.show_currency_flags
             location: 'toolbar'
           -%}
         </div>

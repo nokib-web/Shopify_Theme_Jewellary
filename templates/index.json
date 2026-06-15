@@ -254,7 +254,7 @@
         "block_1": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+            "image": "shopify://shop_images/NEW-IN.png",
             "title": "NEW IN",
             "link": ""
           }
@@ -262,7 +262,7 @@
         "block_2": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/R8873612042_8.jpg",
+            "image": "shopify://shop_images/WATCH.png",
             "title": "WATCH",
             "link": "shopify://collections/watches"
           }
@@ -270,7 +270,7 @@
         "block_3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/109A4569_1440x1800_815262c2-7873-415a-a9a4-61d462c44456.webp",
+            "image": "shopify://shop_images/ACCESSORIES.png",
             "title": "ACCESSORIES",
             "link": "shopify://collections/luxury-pens-designer-key-rings-alexander-jewellers"
           }
@@ -278,7 +278,7 @@
         "block_4": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/IGR-23262-0.10-Y-N.jpg",
+            "image": "shopify://shop_images/RING.png",
             "title": "RINGS",
             "link": "shopify://collections/jewellery-rings-1"
           }
@@ -286,7 +286,7 @@
         "block_5": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Two-sided_yellow_necklace_with_bezel-set_diamonds._Available_in_9ct_and_18ct_gold_from_Alexander_Jewellers.jpg",
+            "image": "shopify://shop_images/NECKLACE.png",
             "title": "NECKLACES",
             "link": "shopify://collections/necklaces-pendants"
           }
@@ -294,7 +294,7 @@
         "block_6": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/image0_copy.jpg",
+            "image": "shopify://shop_images/GIFT.png",
             "title": "GIFT IDEAS",
             "link": "shopify://collections/giftware"
           }
@@ -561,7 +561,7 @@
         "title": "Conscious Luxury",
         "text": "<p>We believe that true luxury shouldn't come at a cost to the earth. Every diamond we source is rigorously vetted to be 100% conflict-free, and we exclusively use recycled precious metals to minimize our environmental footprint.</p>",
         "button_label": "Book a VIP Consultation",
-        "button_link": ""
+        "button_link": "shopify://pages/contact-us"
       }
     },
     "blog-posts": {
@@ -593,11 +593,11 @@
             "instafeed_margin_top": 0,
             "instafeed_margin_bottom": 0,
             "instafeed_margin_sides": 0,
-            "show_instagram_link": false,
+            "show_instagram_link": true,
             "link_alignment": "left",
             "link_color": "#000000",
             "background_color": "",
-            "feed_id": "",
+            "feed_id": "mrirakib04",
             "html_area": ""
           }
         }
@@ -605,7 +605,6 @@
       "block_order": [
         "instafeed_app_block_7ez8GY"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -613,6 +612,7 @@
     },
     "map": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "map_title": "visit our store",
         "address": "<p>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 2151</p><p>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
@@ -655,6 +655,7 @@
     },
     "section_divider_new": {
       "type": "section-divider",
+      "disabled": true,
       "settings": {
         "shape": "animated-waves",
         "color": "#000000",

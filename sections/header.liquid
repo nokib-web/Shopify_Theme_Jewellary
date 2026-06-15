@@ -1,6 +1,12 @@
 {%- liquid
   assign main_menu = linklists[section.settings.main_menu_link_list]
-  assign toolbar_menu = linklists[section.settings.toolbar_menu]
+  assign toolbar_menu = blank
+  for block in section.blocks
+    if block.type == 'toolbar'
+      assign toolbar_menu = linklists[block.settings.toolbar_menu]
+      break
+    endif
+  endfor
 
   assign logo_alignment = 'left'
   if section.settings.main_menu_alignment == 'center-left' or section.settings.main_menu_alignment == 'center-split' or section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-drawer'
@@ -86,26 +92,28 @@
   {%- endif -%}
 
   {%- unless overlay_header -%}
-    {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
-      {%- render 'toolbar',
-        section: section,
-        toolbar_menu: toolbar_menu,
-        overlay_header: overlay_header
-      -%}
-    {%- endif -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'toolbar' -%}
+        {%- render 'toolbar',
+          block: block,
+          overlay_header: overlay_header
+        -%}
+      {%- endif -%}
+    {%- endfor -%}
   {%- endunless -%}
 
   <div class="header-sticky-wrapper">
     <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--sticky is-light{% endif %}">
 
       {%- if overlay_header -%}
-        {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
-          {%- render 'toolbar',
-            section: section,
-            toolbar_menu: toolbar_menu,
-            overlay_header: overlay_header
-          -%}
-        {%- endif -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'toolbar' -%}
+            {%- render 'toolbar',
+              block: block,
+              overlay_header: overlay_header
+            -%}
+          {%- endif -%}
+        {%- endfor -%}
       {%- endif -%}
       <header
         id="SiteHeader"
@@ -318,52 +326,55 @@
         "type": "checkbox",
         "id": "announcement_above_header",
         "label": "Always show above header"
-      },
-      {
-        "type": "header",
-        "content": "Toolbar"
-      },
-      {
-        "type": "link_list",
-        "id": "toolbar_menu",
-        "label": "Navigation",
-        "info": "This menu won't show dropdown items"
-      },
-      {
-        "type": "checkbox",
-        "id": "toolbar_social",
-        "label": "Show social icons"
-      },
-      {
-        "type": "header",
-        "content": "Language selector",
-        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_locale_selector",
-        "label": "Show language selector",
-        "default": true
-      },
-      {
-        "type": "header",
-        "content": "Currency selector",
-        "info": "To add a currency, go to your [currency settings.](/admin/settings/payments)"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_currency_selector",
-        "label": "Show currency selector",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_currency_flags",
-        "label": "Show currency flags",
-        "default": true
       }
     ],
     "blocks": [
+      {
+        "type": "toolbar",
+        "name": "Toolbar",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "link_list",
+            "id": "toolbar_menu",
+            "label": "Navigation",
+            "info": "This menu won't show dropdown items"
+          },
+          {
+            "type": "checkbox",
+            "id": "toolbar_social",
+            "label": "Show social icons"
+          },
+          {
+            "type": "header",
+            "content": "Language selector",
+            "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_locale_selector",
+            "label": "Show language selector",
+            "default": true
+          },
+          {
+            "type": "header",
+            "content": "Currency selector",
+            "info": "To add a currency, go to your [currency settings.](/admin/settings/payments)"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_currency_selector",
+            "label": "Show currency selector",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_currency_flags",
+            "label": "Show currency flags",
+            "default": true
+          }
+        ]
+      },
       {
         "type": "logo",
         "name": "Logo",

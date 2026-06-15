@@ -11414,3 +11414,40 @@ iframe[id^="dummy-chat"] {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+/* Custom Sticky Header Styles */
+.site-header--stuck {
+    background-color: #000 !important;
+}
+
+.site-header--stuck .site-nav__link,
+.site-header--stuck .site-header__logo-link,
+.site-header--stuck .site-header__icon,
+.site-header--stuck .site-header__search-btn,
+.site-header--stuck .site-nav__dropdown-link,
+.site-header--stuck .site-nav__link--icon,
+.site-header--stuck .icon__fallback-text {
+    color: #fff !important;
+}
+
+.site-header--stuck .icon {
+    color: #fff !important;
+}
+
+.site-header--stuck svg.icon path,
+.site-header--stuck svg.icon circle,
+.site-header--stuck svg.icon polygon,
+.site-header--stuck svg.icon rect {
+    stroke: #fff;
+    fill: #fff;
+}
+
+/* For specific icons that shouldn't be filled, we just use stroke */
+.site-header--stuck svg.icon-search path,
+.site-header--stuck svg.icon-hamburger path,
+.site-header--stuck svg.icon-cart path,
+.site-header--stuck svg.icon-user path,
+.site-header--stuck svg.icon-close path {
+    stroke: #fff !important;
+    fill: none !important;
+}
