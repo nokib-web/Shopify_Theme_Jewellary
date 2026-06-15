@@ -11507,6 +11507,10 @@ iframe[id^="dummy-chat"] {
     width: 100%;
 }
 
+.custom-blog-featured .grid__image-ratio:before {
+    padding-bottom: 30% !important; /* Decrease height significantly */
+}
+
 .custom-blog-featured-card {
     position: absolute;
     bottom: -50px;
@@ -11589,7 +11593,10 @@ iframe[id^="dummy-chat"] {
 
 @media screen and (max-width: 768px) {
     .custom-blog-featured {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
+    }
+    .custom-blog-featured .grid__image-ratio:before {
+        padding-bottom: 50% !important; /* A bit taller on mobile so it doesn't look like a sliver */
     }
     
     .custom-blog-featured-card {
@@ -11683,6 +11690,23 @@ iframe[id^="dummy-chat"] {
 @media only screen and (max-width: 480px) {
   .footer-menu-grid {
     grid-template-columns: 1fr;
+    gap: 0; /* Reduce gap between rows on mobile */
+  }
+  .footer-tier-middle {
+    text-align: left !important;
+  }
+  .footer-tier-middle .footer__title.collapsible-trigger-btn {
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .footer-tier-middle .footer__title.collapsible-trigger-btn .collapsible-trigger__icon {
+    right: 0;
+    left: auto;
+  }
+  .footer-tier-middle .collapsible-content__inner {
+    padding-bottom: 15px;
   }
 }
 .footer-tier-middle .footer__title {
