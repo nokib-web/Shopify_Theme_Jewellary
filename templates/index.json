@@ -570,7 +570,6 @@
         "title": "Gregory Journal",
         "view_all_text": "View all news and events",
         "view_all_link": "",
-        "blog": "jewellery-education-centre",
         "bg_color": "#ffffff",
         "padding_top": 50,
         "padding_bottom": 50
@@ -619,7 +618,7 @@
       ],
       "settings": {
         "title": "Follow Us",
-        "subtitle": "Follow us @gregoryjewellers",
+        "subtitle": "Follow us @nazmulhasan.nokib",
         "instagram_link": "https://www.instagram.com/nazmulhasan.nokib/",
         "padding_top": 60,
         "padding_bottom": 60
