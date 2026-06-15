@@ -11424,7 +11424,6 @@ iframe[id^="dummy-chat"] {
 .site-header--stuck .site-header__logo-link,
 .site-header--stuck .site-header__icon,
 .site-header--stuck .site-header__search-btn,
-.site-header--stuck .site-nav__dropdown-link,
 .site-header--stuck .site-nav__link--icon,
 .site-header--stuck .icon__fallback-text {
     color: #fff !important;
@@ -11450,4 +11449,18 @@ iframe[id^="dummy-chat"] {
 .site-header--stuck svg.icon-close path {
     stroke: #fff !important;
     fill: none !important;
+}
+
+/* Navigation Separator */
+.header-nav-centered-wrapper {
+    border-top: 1px solid var(--colorBorder);
+    margin-top: 15px;
+}
+
+.header-nav-centered {
+    padding-top: 15px;
+}
+
+.site-header--stuck .header-nav-centered-wrapper {
+    border-top-color: rgba(255, 255, 255, 0.2);
 }

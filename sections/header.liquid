@@ -180,13 +180,17 @@
               {%- render 'header-icons', section: section -%}
             </div>
           </div>
-
-          {%- if section.settings.main_menu_alignment == 'center' -%}
-            <div class="text-center">
-              {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
-            </div>
-          {%- endif -%}
         </div>
+
+        {%- if section.settings.main_menu_alignment == 'center' -%}
+          <div class="header-nav-centered-wrapper">
+            <div class="page-width">
+              <div class="text-center header-nav-centered">
+                {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
         <div class="site-header__search-container">
           <div class="site-header__search">
             <div class="page-width">
