@@ -559,17 +559,45 @@
         "accent_color": "#d4af37",
         "subtitle": "Ethical Sourcing",
         "title": "Conscious Luxury",
-        "text": "<p>We believe that true luxury shouldn't come at a cost to the earth. Every diamond we source is rigorously vetted to be 100% conflict-free, and we exclusively use recycled precious metals to minimize our environmental footprint.</p>",
+        "text": "<p>We believe that true luxury shouldn't come at a cost to the earth. Every diamond we source is rigorously vetted to be 100% conflict-free, and we exclusively use recycled precious metals to minimise our environmental footprint.</p>",
         "button_label": "Book a VIP Consultation",
         "button_link": "shopify://pages/contact-us"
       }
     },
     "custom_blog_showcase_new": {
       "type": "custom-blog-showcase",
+      "blocks": {
+        "article_LXxXyV": {
+          "type": "article",
+          "settings": {
+            "article": "jewellery-education-centre/engagement-ring-buying-guide-australia",
+            "title": ""
+          }
+        },
+        "article_Qhz6nE": {
+          "type": "article",
+          "settings": {
+            "article": "news/engagement-rings-in-north-rocks",
+            "title": ""
+          }
+        },
+        "article_LdQGYi": {
+          "type": "article",
+          "settings": {
+            "article": "jewellery-education-centre/engagement-ring-buying-guide-sydney",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_LXxXyV",
+        "article_Qhz6nE",
+        "article_LdQGYi"
+      ],
       "settings": {
         "title": "Gregory Journal",
         "view_all_text": "View all news and events",
-        "view_all_link": "",
+        "view_all_link": "shopify://blogs/news",
         "bg_color": "#ffffff",
         "padding_top": 50,
         "padding_bottom": 50

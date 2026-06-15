@@ -24,92 +24,117 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+<footer class="site-footer custom-tiered-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
 
-    <div class="grid">
-      {%- assign row_width = 0 -%}
+    {%- comment -%} TOP TIER: Logo & Text {%- endcomment -%}
+    <div class="footer-tier-top">
       {%- for block in section.blocks -%}
-        {%- assign row_width = row_width | plus: block.settings.container_width -%}
-        {%- if row_width > 100 -%}
-          <div class="footer__clear small--hide"></div>
-          {%- assign row_width = row_width | minus: 100 -%}
+        {%- assign is_top = false -%}
+        {%- if block.type == 'logo_social' -%}
+          {%- assign is_top = true -%}
+        {%- elsif block.type == 'custom' and block.settings.title == blank -%}
+          {%- assign is_top = true -%}
         {%- endif -%}
-
-        <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
-          {%- style -%}
-            @media only screen and (min-width: 769px) and (max-width: 959px) {
-              .footer__item--{{ block.id }} {
-                width: 50%;
-                padding-top: 40px;
-              }
-              .footer__item--{{ block.id }}:nth-child(2n + 1) {
-                clear: left;
-              }
-            }
-            @media only screen and (min-width: 960px) {
-              .footer__item--{{ block.id }} {
-                width: {{ block.settings.container_width }}%;
-              }
-
-            }
-          {%- endstyle -%}
-
-          {%- liquid
-            case block.type
-              when 'logo_social'
-                render 'footer-logo', block: block
-              when 'custom'
-                render 'footer-custom-text', block: block
-              when 'newsletter'
-                render 'footer-newsletter', block: block
-              when 'menu'
-                render 'footer-menu', block: block
-            endcase
-          -%}
-        </div>
-      {%- endfor -%}
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'logo' -%}
-          <div class="grid__item medium-up--hide">
-            {%- render 'footer-logo', block: block -%}
+        {%- if is_top -%}
+          <div class="footer-block-top footer__item--{{ block.id }}" {{ block.shopify_attributes }}>
+            {%- if block.type == 'logo_social' -%}
+              {% render 'footer-logo', block: block %}
+            {%- else -%}
+              {% render 'footer-custom-text', block: block %}
+            {%- endif -%}
           </div>
         {%- endif -%}
       {%- endfor -%}
     </div>
 
-    {%- if show_selectors -%}
-      <div class="footer__section">
-        {%- render 'multi-selectors',
-          locale_selector: locale_selector,
-          currency_selector: currency_selector,
-          show_currency_flags: section.settings.show_currency_flags
-          location: 'footer'
-        -%}
+    {%- comment -%} MIDDLE TIER: Menus and Address/Hours {%- endcomment -%}
+    <div class="footer-tier-middle">
+      <div class="footer-menu-grid">
+        {%- for block in section.blocks -%}
+          {%- assign is_middle = false -%}
+          {%- if block.type == 'menu' -%}
+            {%- assign is_middle = true -%}
+          {%- elsif block.type == 'custom' and block.settings.title != blank -%}
+            {%- assign is_middle = true -%}
+          {%- endif -%}
+          {%- if is_middle -%}
+            <div class="footer-block-menu footer__item--{{ block.id }}" {{ block.shopify_attributes }}>
+              {%- if block.type == 'menu' -%}
+                {% render 'footer-menu', block: block %}
+              {%- else -%}
+                {% render 'footer-custom-text', block: block %}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
       </div>
-    {%- endif -%}
+    </div>
 
-    {%- if section.settings.show_payment_icons -%}
-      {%- unless shop.enabled_payment_types == empty -%}
-        <ul class="inline-list payment-icons footer__section">
-          {%- for type in shop.enabled_payment_types -%}
-            <li class="icon--payment">
-              {{ type | payment_type_svg_tag }}
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endunless -%}
-    {%- endif -%}
-
-    {%- if section.settings.show_copyright -%}
-      <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
-        {%- if section.settings.copyright_text != blank -%}
-          {{ section.settings.copyright_text }}
+    {%- comment -%} BOTTOM TIER: Newsletter, Social, Payment {%- endcomment -%}
+    <div class="footer-tier-bottom">
+      <div class="footer-bottom-left">
+        {%- assign has_newsletter = false -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'newsletter' -%}
+            {%- assign has_newsletter = true -%}
+            <div class="footer-block-newsletter footer__item--{{ block.id }}" {{ block.shopify_attributes }}>
+              {% render 'footer-newsletter', block: block %}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if has_newsletter == false -%}
+          <div class="footer-block-newsletter footer__item--hardcoded">
+            {% render 'footer-newsletter' %}
+          </div>
         {%- endif -%}
-      </p>
-    {%- endif -%}
-    <p class="footer__small-text">{{ powered_by_link }}</p>
+      </div>
+      <div class="footer-bottom-right">
+        <div class="footer-social-icons">
+          {% render 'footer-social-icons' %}
+        </div>
+        
+        <div class="footer-payment-icons">
+          {%- if section.settings.show_payment_icons -%}
+            {%- unless shop.enabled_payment_types == empty -%}
+              <ul class="inline-list payment-icons">
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="icon--payment">
+                    {{ type | payment_type_svg_tag }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endunless -%}
+          {%- endif -%}
+        </div>
+
+        {%- if show_selectors -%}
+          <div class="footer-selectors">
+            {%- render 'multi-selectors',
+              locale_selector: locale_selector,
+              currency_selector: currency_selector,
+              show_currency_flags: section.settings.show_currency_flags,
+              location: 'footer'
+            -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- comment -%} COPYRIGHT TIER {%- endcomment -%}
+    <div class="footer-tier-copyright">
+      <div class="footer-copyright-left">
+        {%- if section.settings.show_copyright -%}
+          <p class="footer__small-text">
+            &copy; {{ shop.name }} {{ 'now' | date: '%Y' }}
+            {%- if section.settings.copyright_text != blank -%}
+              {{ section.settings.copyright_text }}
+            {%- endif -%}
+          </p>
+        {%- endif -%}
+        <p class="footer__small-text">{{ powered_by_link }}</p>
+      </div>
+    </div>
 
   </div>
 </footer>

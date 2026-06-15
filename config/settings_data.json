@@ -153,10 +153,28 @@
           "81d700b9-9b5c-4aba-9ed6-83c6bdb840a7": {
             "type": "custom",
             "settings": {
-              "show_footer_title": true,
-              "title": "Alexander Jewellers",
-              "text": "<p>Located in North Rocks NSW, we specialise in hand crafted engagement rings and wedding rings. <br/><br/>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 215<br/><br/>PH: 02 9873 1802</p><p>TRADING HOURS<br/>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
+              "show_footer_title": false,
+              "title": "",
+              "text": "<p>Located in North Rocks NSW, we specialise in hand crafted engagement rings and wedding rings.</p>",
               "container_width": 33
+            }
+          },
+          "custom_address": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Our Address",
+              "text": "<p>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 215<br/><br/>PH: 02 9873 1802</p>",
+              "container_width": 20
+            }
+          },
+          "custom_hours": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Trading Hours",
+              "text": "<p>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
+              "container_width": 20
             }
           },
           "1494292487693": {
@@ -172,9 +190,11 @@
         },
         "block_order": [
           "logo_social_4Gh4Mw",
+          "81d700b9-9b5c-4aba-9ed6-83c6bdb840a7",
           "1494301487049",
           "menu_MYxUcK",
-          "81d700b9-9b5c-4aba-9ed6-83c6bdb840a7",
+          "custom_address",
+          "custom_hours",
           "1494292487693"
         ],
         "settings": {
