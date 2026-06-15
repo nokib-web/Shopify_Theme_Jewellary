@@ -93,13 +93,14 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "logo": "shopify://shop_images/store-1009-logo-light-20211005110342.jpg",
+              "logo": "shopify://shop_images/footer_logo_1c50bdb3-d5ec-4f0f-aef0-783c764fbb73.png",
               "desktop_logo_width": 190,
               "mobile_logo_width": 110
             }
           },
           "1524770296206": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Alexander Jewellers | Fine Diamond & Gold Jewellery – North Rocks, Sydney",
               "link_text": "",
@@ -119,12 +120,7 @@
           "sticky_index": false,
           "sticky_collection": false,
           "announcement_compact": true,
-          "announcement_above_header": true,
-          "toolbar_menu": "",
-          "toolbar_social": true,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
-          "show_currency_flags": true
+          "announcement_above_header": true
         }
       },
       "footer": {
@@ -349,9 +345,7 @@
             "header_style": "sticky",
             "sticky_index": false,
             "sticky_collection": false,
-            "announcement_compact": true,
-            "toolbar_menu": "top",
-            "toolbar_social": true
+            "announcement_compact": true
           }
         },
         "footer": {
@@ -512,12 +506,7 @@
             "sticky_index": true,
             "sticky_collection": true,
             "announcement_compact": true,
-            "announcement_above_header": true,
-            "toolbar_menu": "",
-            "toolbar_social": true,
-            "show_locale_selector": true,
-            "show_currency_selector": true,
-            "show_currency_flags": true
+            "announcement_above_header": true
           }
         },
         "footer": {
@@ -744,8 +733,7 @@
             "header_style": "normal",
             "sticky_index": true,
             "sticky_collection": false,
-            "announcement_compact": false,
-            "toolbar_social": false
+            "announcement_compact": false
           }
         },
         "footer": {

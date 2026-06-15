@@ -564,6 +564,18 @@
         "button_link": "shopify://pages/contact-us"
       }
     },
+    "custom_blog_showcase_new": {
+      "type": "custom-blog-showcase",
+      "settings": {
+        "title": "Gregory Journal",
+        "view_all_text": "View all news and events",
+        "view_all_link": "",
+        "blog": "jewellery-education-centre",
+        "bg_color": "#ffffff",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "blog-posts": {
       "type": "blog-posts",
       "disabled": true,
@@ -688,6 +700,7 @@
     "text_and_image_6znAg6",
     "164577628288f9dc1b",
     "conscious_luxury_new",
+    "custom_blog_showcase_new",
     "blog-posts",
     "1751424715d2d649f9",
     "map",
