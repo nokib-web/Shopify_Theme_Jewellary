@@ -101,7 +101,7 @@
       {%- if section.settings.image != blank -%}
         <img src="{{ section.settings.image | img_url: '2000x' }}" alt="Custom Design Journey" class="custom-journey-banner" loading="lazy">
       {%- else -%}
-        <img src="{{ 'custom_journey_banner.png' | asset_url }}" alt="Custom Design Journey" class="custom-journey-banner" loading="lazy">
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg custom-journey-banner' }}
       {%- endif -%}
     </div>
 

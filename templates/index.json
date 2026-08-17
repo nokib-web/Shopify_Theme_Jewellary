@@ -19,13 +19,13 @@
             "title": "Forever Begins With a Yes",
             "title_size": 40,
             "subheading": "Handcrafted diamond engagement rings, designed and made in Australia – where timeless elegance meets true love.",
-            "link": "shopify://collections/engagement-wedding-rings-alexander-jewellers",
+            "link": "shopify://collections/engagement-wedding-rings-Evoriajewels-jewellers",
             "link_text": "Shop Engagement Rings",
             "link_2": "shopify://collections/engagement-rings-1",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/Engagement_rings_-_Alexander_Jewellers.jpg",
+            "image": "shopify://shop_images/Engagement_rings_-_Evoriajewels_Jewellers.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -37,7 +37,7 @@
             "title": "Design Your Own",
             "title_size": 40,
             "subheading": "",
-            "link": "https://alexanderjewellersnorthrocks.jewelershowcase.com/",
+            "link": "https://Evoriajewelsjewellersnorthrocks.jewelershowcase.com/",
             "link_text": "start creating",
             "link_2": "",
             "link_text_2": "",
@@ -272,7 +272,7 @@
           "settings": {
             "image": "shopify://shop_images/ACCESSORIES.png",
             "title": "ACCESSORIES",
-            "link": "shopify://collections/luxury-pens-designer-key-rings-alexander-jewellers"
+            "link": "shopify://collections/luxury-pens-designer-key-rings-Evoriajewels-jewellers"
           }
         },
         "block_4": {
@@ -335,7 +335,7 @@
         "title": "Master Craftsmanship",
         "text": "<p>Decades of experience go into every piece we create. Our master jewelers blend traditional techniques with modern precision to craft rings that will last a lifetime and beyond.</p>",
         "button_label": "Our Story",
-        "button_link": "shopify://pages/about-alexander-jewellers"
+        "button_link": "shopify://pages/about-Evoriajewels-jewellers"
       }
     },
     "text_and_image_MC78jN": {
@@ -350,7 +350,7 @@
         "block_2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg"
+            "image": "shopify://shop_images/Evoriajewels_Jewellers_Yellow_Diamond.jpg"
           }
         }
       },
@@ -360,7 +360,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/IMG_2379_JPG_94c395fe-3532-4501-a479-e8ce25622b28.jpg",
-        "image2": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+        "image2": "shopify://shop_images/Evoriajewels_Jewellers_Yellow_Diamond.jpg",
         "image_width": 550,
         "images_per_view": 1,
         "slider_autoplay": true,
@@ -385,7 +385,7 @@
         "text_size": 24,
         "text": "<p>We believe jewelry is more than an accessory—it’s a story of individuality and style. Our curated collection blends timeless craftsmanship with modern design, <strong>creating pieces that empower you to express your unique elegance every day.</strong></p>",
         "button_label": "OUR STORY",
-        "button_link": "shopify://pages/about-alexander-jewellers",
+        "button_link": "shopify://pages/about-Evoriajewels-jewellers",
         "content_width": 800,
         "overlay_opacity": 30,
         "primary_text_color": "#d4af37",
@@ -473,7 +473,7 @@
         "btn_hover_border": "#c8a26a",
         "hero_image": "shopify://shop_images/jewellery-repairs.jpg",
         "float_image_1": "shopify://shop_images/Workshop-Re-Love-3.webp",
-        "float_image_2": "shopify://shop_images/Alexander_Jewellers_Yellow_Diamond.jpg",
+        "float_image_2": "shopify://shop_images/Evoriajewels_Jewellers_Yellow_Diamond.jpg",
         "padding_top": 120,
         "padding_bottom": 120,
         "padding_top_mobile": 60,
@@ -485,7 +485,7 @@
       "name": "Featured collection",
       "settings": {
         "title": "Shop Engagement Rings",
-        "home_featured_products": "engagement-wedding-rings-alexander-jewellers",
+        "home_featured_products": "engagement-wedding-rings-Evoriajewels-jewellers",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -657,7 +657,7 @@
       "disabled": true,
       "settings": {
         "map_title": "visit our store",
-        "address": "<p>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 2151</p><p>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
+        "address": "<p>3004 Coldwater Ave NW<br/>Canton, Ohio 44708<br/>United States</p><p>Monday to Friday 9:30am - 5:30pm<br/>Saturday 9:30am - 4:00pm<br/>Sunday 10:00am - 4:00pm</p>",
         "map_address": "Shop 28 & 29 North Rocks Shopping Centre328-336 North Rocks RoadNorth Rocks NSW 2151",
         "api_key": "AIzaSyCLQYdgzPG5Sly6MszcXtUhT-yoK9NZvTc",
         "show_button": true,

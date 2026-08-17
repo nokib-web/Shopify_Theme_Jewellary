@@ -72,9 +72,9 @@
     "cart_type": "drawer",
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
-    "social_facebook_link": "https://www.facebook.com/Alexander-Jewellers-Watchmakers-458832964140123/",
-    "social_instagram_link": "https://www.instagram.com/alexanderjewellers_/",
-    "social_tiktok_link": "https://www.tiktok.com/@alexanderjeweller_?is_from_webapp=1&sender_device=pc",
+    "social_facebook_link": "https://www.facebook.com/Evoriajewels-Jewellers-Watchmakers-458832964140123/",
+    "social_instagram_link": "https://www.instagram.com/Evoriajewelsjewellers_/",
+    "social_tiktok_link": "https://www.tiktok.com/@Evoriajewelsjeweller_?is_from_webapp=1&sender_device=pc",
     "favicon": "shopify://shop_images/Mask_Group_24.png",
     "show_breadcrumbs": false,
     "checkout_logo_position": "left",
@@ -102,7 +102,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Alexander Jewellers | Fine Diamond & Gold Jewellery – North Rocks, Sydney",
+              "text": "Evoriajewels",
               "link_text": "",
               "link": "shopify://pages/contact-us"
             }
@@ -155,7 +155,7 @@
             "settings": {
               "show_footer_title": false,
               "title": "",
-              "text": "<p>Located in North Rocks NSW, we specialise in hand crafted engagement rings and wedding rings.</p>",
+              "text": "<p>Shipping<br/>FREE SHIPPING<br/>$2.95 - Shipping with insurance and tracking<br/><br/>Contact info<br/>info.evoriajewels@gmail.com<br/><br/>Check the bottom of the store page for privacy, refund, and terms of service.</p>",
               "container_width": 33
             }
           },
@@ -164,7 +164,7 @@
             "settings": {
               "show_footer_title": true,
               "title": "Our Address",
-              "text": "<p>Shop 28 & 29 North Rocks Shopping Centre<br/>328-336 North Rocks Road<br/>North Rocks , NSW 215<br/><br/>PH: 02 9873 1802</p>",
+              "text": "<p>3004 Coldwater Ave NW<br/>Canton, Ohio 44708<br/>United States<br/><br/>PH: 330-617-2900</p>",
               "container_width": 20
             }
           },
